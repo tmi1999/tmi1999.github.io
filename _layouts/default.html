@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="generator" content="Jekyll v4.1.1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/main.css">
+    <style>
+		a.menu{
+			float: left
+			display: block;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-weight: bold;
+		}
+		.menu {
+			float: left
+			display: block; 
+			padding-left:100px; 
+			background-color:#DEE6F5; 
+			font-size: 20px;
+		}
+		
+		.vl {
+			border-left: 3px solid white;
+			height: 1px;
+		}		
+		
+		.myDiv {
+			display: block;
+			margin-right: 10%; 
+			margin-left: 10%; 
+			padding-right: 30px; 
+			padding-left: 30px;
+		}
+    </style>
+  </head>
+  <body>
+    
+      <nav class="menu">
+        <a class="menu" href="/">Home</a>
+        <a class="menu" href="/contact/"> Contact</a>
+        <a class="menu" href="/blog/">Blog</a>
+      </nav>
+<hr>
+	<div class="myDiv">
+      <h1 style="font-weight:bold">{{ page.title }}</h1>
+<hr>
+      <section style = "font-family:Arial, Helvetica, sans-serif;font-size:16px">
+        <br>{{ content }}
+      </section>
+    </div>
+  </body>
+</html>
